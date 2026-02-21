@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="DARUMA TOKYO">
+  <h1 style="font-size:42px; line-height:1.2; margin:0 0 12px;">
+    日本の文化・伝統工芸品を、日本のアイコンに。
+  </h1>
+<img src="/images/hero.png" alt="日本の文化・伝統工芸品を、日本のアイコンに。" class="hero-img" />
+  <p style="font-size:17px; color:#333; max-width: 780px;">
+    受け継がれてきた技と美意識を、現代の暮らしと経済のなかで「続く価値」に翻訳する。<br>
+私たちは、日本文化のハブとして、つくり手の価値が正しく循環する産業のかたちをつくります。
+  </p>
+
+  <div style="display:flex; gap:12px; margin:18px 0 34px; flex-wrap:wrap;">
+   
+  </div>
+<h2 class="section-title">代表挨拶</h2>
+
+<div class="profile-wrap">
+  <img src="/images/ceo-icon.png" alt="代表写真" class="profile-img" />
+</div>
+  <div class="profile-wrap">
+
+</div>
+      <p>はじめまして。代表の岩井です。
+
+私が日本文化に強く惹かれるのは、それが「飾るための美しさ」だけではなく、暮らしや仕事の節目に寄り添い、人の行動や関係性を静かに支えてきた「機能する文化」だからです。けれど現代では、その価値が正しく伝わらないまま、消費や流行として扱われてしまう場面も少なくありません。
+
+私たちは、まず「だるま」を起点に、アートとデザインの力で本質的な価値を翻訳し、オーセンティックな形で届けることに挑戦しています。目入れという参加型の所作、手仕事の厚み、産地の背景——そうした要素を丁寧に編集し、インテリアやモニュメント、コレクションとしても成立する「文化体験」へと再設計する。そして、その価値を正統な価格で届け、つくり手に還る循環をつくる。これが私たちのリブランディングです。
+
+同時に、オウンドメディア「Daruma Times」を通じて、由来・産地・作り手・儀式・扱い方までを体系化し、文化の背景が正しく伝わる土台を育てています。
+
+だるまは、私たちの最初の代表作にすぎません。中長期的には、日本文化のハブとして、伝統の本質的価値を現代の言葉と体験に翻訳し、文化産業が持続する仕組みを実装していきます。
+
+これからの取り組みに、ぜひご期待ください。</p>
+  
+  
+  </div>
+</BaseLayout>
+<style>
+  .hero-img{
+    width: 100%;
+    max-width: 1100px;
+    display: block;
+    margin: 24px 0 0;
+    border-radius: 14px;
+  }
+
+  .profile-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-img{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 18px 0; /* 上下だけ */
+    border-radius: 14px;
+  }
+.section-title{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 14px;
+  text-align: center;   /* ← これ追加 */
+}
+}
+</style>

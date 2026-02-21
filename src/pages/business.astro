@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="事業内容 | DARUMA TOKYO">
+  <h1>事業内容</h1>
+
+  <div class="card" style="margin:18px 0;">
+    <h2 style="margin-top:0;">だるまのリブランディング事業</h2>
+<img
+  src="/images/daruma-group.png"
+  alt="色とりどりのだるま"
+  class="section-img"
+/>
+    <p>
+      当社は、日本の伝統文化である「だるま」を、アートとデザインの力で再定義し、その本質的な価値を現代に伝えるための事業を展開しています。目指すのは、縁起物として消費される存在から、造形・儀式性・手仕事の厚みを備えた文化アイコンへと位置づけ直し、プロダクトと体験として届けることです。
+    </p>
+    <p>
+      AIやITが進むほど、暮らしは合理化されます。一方で、人が動くために必要な「意味」や「納得」は、むしろ欠けやすくなります。<br>だるまは、目入れという参加型の所作を通じて、決意や物語を形にし、行動の節目を生み出せる稀有な存在です。
+    </p>
+    <p>
+      ただし、だるまの可能性は「目標達成」に限りません。空間に意思やストーリーを宿すインテリアとして、場の中心になるモニュメントとして、あるいは文化を所有するコレクションとしても成立します。私たちは、伝統のオーセンティシティを守りながら、現代の暮らしや組織に自然に溶け込む表現へ翻訳し、だるまの価値を更新していきます。
+    </p>
+<p>
+      そして何より、つくり手の技と背景が正しく伝わる設計を通じて、正統なだるまの価値を引き上げ、正統な価格で届ける。<br>その結果として、産地に投資が戻り、価値が循環する状態をつくる——それが私たちのリブランディングです。<br>
+    </p>
+  </div>
+ <h2 style="margin-top:0;">オウンドメディア運営</h2>
+<img
+  src="/images/daruma-times.png"
+  alt="メディア画像"
+  class="section-img"
+/>
+
+  <p>
+     当社は、「Daruma Times」という日本の伝統文化であるだるまの魅力を、もっと身近に、もっと深く知っていただくための、だるま専門メディアを運営しています。近年、ウェルビーイングや意味のあるギフト、文化的なインテリアへの関心が高まる中で、だるまは国内外で改めて注目を集めています。しかし、その背景にある歴史や産地、つくり手の技、目入れという儀式の意味は、断片的に語られることが多く、正確に伝わっているとは言えません。私たちは、だるまを単なる「縁起物」や「お土産」で終わらせず、本物の価値と、そこに宿る文化・人・ストーリーまでを丁寧に編集し、現代の暮らしや組織に自然に息づく形で届けていくことを目指しています。
+    </p>
+<div class="cta-wrap">
+  <a class="cta-btn" href="https://daruma-times.com/" target="_blank" rel="noopener">
+    メディアサイトはこちら →
+  </a>
+</div>
+
+ 
+</BaseLayout>
+<style>
+  .section-img{
+    width: 100%;
+    height: 400px;      /* ←ここで高さ調整（例） */
+    object-fit: cover;  /* はみ出す分はトリミング */
+    display: block;
+    margin: 18px 0 24px;
+    border-radius: 14px;
+  }
+.cta-wrap{
+  margin-top: 18px;
+text-align:center; 
+}
+.cta-btn{
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.cta-btn:hover{
+  opacity: .9;
+}
+/* スマホ（768px以下）のときだけ効く */
+@media (max-width: 768px) {
+  h1 { font-size: 34px; line-height: 1.15; }
+  p  { font-size: 16px; }
+
+  .hero-img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  /* ナビが詰まるなら */
+  nav { gap: 10px; }
+  nav a { font-size: 14px; padding: 8px 10px; }
+}
+.section-img{
+  display:block;
+  width:100%;
+  max-width:680px;   /* PCでの最大サイズ */
+  height:auto;
+  margin: 24px auto;
+}
+
+@media (max-width: 768px){
+  .section-img{
+    max-width: 320px; /* スマホでは小さく */
+    margin: 16px auto;
+  }
+}
+</style>
