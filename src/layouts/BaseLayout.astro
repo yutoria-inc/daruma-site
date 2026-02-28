@@ -1,5 +1,5 @@
 ---
-const { title = "Daruma Tokyo" } = Astro.props;
+const { title = "株式会社ユトリア", description = "受け継がれてきた技と美意識を、現代の暮らしと経済のなかで「続く価値」に翻訳する。私たちは、日本文化のハブとして、つくり手の価値が正しく循環する産業のかたちをつくります。" } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,7 +27,7 @@ const { title = "Daruma Tokyo" } = Astro.props;
       .span12 { grid-column: span 12; }
       @media (max-width: 720px){ .span6{ grid-column: span 12; } }
     </style>
-<meta name="description" content="受け継がれてきた技と美意識を、現代の暮らしと経済のなかで「続く価値」に翻訳する。私たちは、日本文化のハブとして、つくり手の価値が正しく循環する産業のかたちをつくります。" />
+<meta name="description" content={description} />
 
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
 <link rel="icon" type="image/png" href="/images/favicon.png" />
